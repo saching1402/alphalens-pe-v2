@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "start": "vite preview --host 0.0.0.0 --port 3000"
+    "start": "http-server dist -p 3000 -P http://localhost:3000? --cors"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.32.0",
@@ -21,6 +20,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
+    "http-server": "^14.1.1",
     "vite": "^5.2.0"
   }
 }
